@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Header = () =>{
 
@@ -9,9 +9,11 @@ const Header = () =>{
       }
     
       return (
-        <div >
+      <header>
+        <div>
           <h1> Let {handleNameChange()}</h1>
         </div>
+    </header>
       );
 }
 
