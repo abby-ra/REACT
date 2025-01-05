@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 
 const Content = () => {
    
@@ -7,15 +8,19 @@ const Content = () => {
             const int = Math.floor(Math.random() * 3);
             return names[int]
           }
-        const handleClick = () =>{
-            console.log('Thanks for the support')
-        }
+        
+          const [count , setCount] = useState(99);
+
+          
 
         return (
             <main>
             <div >
-              <h1> Let {handleNameChange()}</h1>
-              <button onClick={handleClick}>Subscribe</button>
+              <h1> Let Earn Money</h1>
+              <button > Subscribe</button><br></br>
+              <button>-</button> <br></br>
+              <span>{count}</span> <br></br>
+              <button >+</button><br></br>
             </div>
            </main>
         );
